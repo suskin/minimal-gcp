@@ -54,6 +54,9 @@ bundle: $(STACK_PACKAGE_REGISTRY)
 		; done
 
 	cp -r $(STACK_PACKAGE_REGISTRY_SOURCE)/* $(STACK_PACKAGE_REGISTRY)
+
+	cp stack.yaml $(STACK_PACKAGE_REGISTRY)
+	cp -r resources/* $(STACK_PACKAGE_REGISTRY)/resources
 .PHONY: bundle
 
 # A local docker registry can be used to publish and consume images locally, which

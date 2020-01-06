@@ -16,7 +16,7 @@ spec:
       MinimalGCP.gcp.resourcepacks.crossplane.io/v1alpha1:
         hooks:
           reconcile:
-          - directory: resources
+          - directory: resources/minimal-gcp
 
   title: "Minimal GCP Environment"
   readme: ""
